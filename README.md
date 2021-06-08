@@ -8,5 +8,5 @@
   docker build -t shinyproxy-streamlit .
   ```
   
-3. Run Shiny Proxy with the configuration specified in `application.yml`
+3. Run Shiny Proxy with the configuration specified in [application.yml](application.yml)
  
