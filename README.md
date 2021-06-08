@@ -1,7 +1,7 @@
 ## How to setup the ShinyProxy/Streamlit app
-1. Clone the [repository containing the Dockerfile]():
+1. Clone this [repository](https://github.com/Tiro-health/shiny-proxy-helloworld):
   ```bash
-  git clone 
+  git clone git@github.com:Tiro-health/shiny-proxy-helloworld.git
   ```
 2. `cd` to the repo directory and build the docker container:
   ```bash
