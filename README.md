@@ -3,7 +3,7 @@
   ```bash
   git clone git@github.com:Tiro-health/shiny-proxy-helloworld.git
   ```
-2. `cd` to the repo directory and build the docker container:
+2. `cd` to the folder containing the [Dockerfile](Dockerfile) and build the docker container:
   ```bash
   docker build -t shinyproxy-streamlit .
   ```
