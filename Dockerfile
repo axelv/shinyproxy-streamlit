@@ -1,5 +1,5 @@
 FROM python:3.7
-RUN pip install streamlit
+RUN pip install streamlit pandas numpy
 COPY . /app
 WORKDIR /app
 EXPOSE 8501
