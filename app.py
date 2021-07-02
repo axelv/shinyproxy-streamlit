@@ -1,6 +1,8 @@
 import streamlit as st 
 import pandas as pd
+import eland as ed
 import numpy as np
+from client import get_client
 
 def main():
 	"""Deploying Streamlit App In Docker"""
@@ -16,7 +18,9 @@ def main():
 	if choices == 'EDA':
 		st.subheader("EDA")
 		st.text("Hello world!")
-		st.bar_chart(pd.DataFrame(np.random.normal(size=[10, 3])))
+		es = get_client()
+		df = ed.DataFrame(es, "uzleuven_mir*").to_pandas() 
+		st.bar_chart(df)
 
 	elif choices == 'Plots':
 		st.subheader("Visualization")
