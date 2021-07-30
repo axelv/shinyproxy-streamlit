@@ -13,16 +13,16 @@ def main():
 
 	activities = ["EDA","Plots"]
 
-	choices = st.sidebar.selectbox('Select Activities',activities)
+	choice = st.sidebar.selectbox('Select Activities',activities)
 
-	if choices == 'EDA':
+	if choice == 'EDA':
 		st.subheader("EDA")
 		st.text("Hello world!")
 		es = get_client()
 		df = ed.DataFrame(es, "uzleuven_mir*").to_pandas() 
 		st.bar_chart(df)
 
-	elif choices == 'Plots':
+	elif choice == 'Plots':
 		st.subheader("Visualization")
 		st.text("There are no plots here")
 
